@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_HomeDrawer_Top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navItem_HomeDrawer_BarcodeScanning"
+            android:icon="@drawable/ic_scan_barcode"
+            android:title="@string/navDrawerMenu_ScanBarcode" />
+
+        <item
+            android:id="@+id/navItem_HomeDrawer_OurProducts"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="@string/navActionBar_OurProducts" />
+
+        <item
+            android:id="@+id/navItem_HomeDrawer_Recipes"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/navDrawerMenu_Recipes" />
+
+        <item
+            android:id="@+id/navItem_HomeDrawer_DailyDessert"
+            android:icon="@drawable/ic_cake"
+            android:title="@string/navDrawerMenu_DailyDessert" />
+    </group>
+
+    <item android:title="@string/inprolacSa">
+        <menu>
+            <item
+                android:id="@+id/navItem_HomeDrawer_AboutUs"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/navDrawerMenu_AboutUs" />
+            <item
+                android:id="@+id/navItem_HomeDrawer_ContactUs"
+                android:icon="@drawable/ic_email"
+                android:title="@string/navDrawerMenu_ContactUs" />
+        </menu>
+    </item>
+
+    <item android:title="@string/navDrawerMenu_StayInTouchWithUs">
+        <menu>
+            <item
+                android:id="@+id/navItem_HomeDrawer_Facebook"
+                android:icon="@drawable/ic_facebook_icon"
+                android:title="@string/navDrawerMenu_Facebook" />
+
+            <item
+                android:id="@+id/navItem_HomeDrawer_Youtube"
+                android:icon="@drawable/ic_youtube"
+                android:title="@string/navDrawerMenu_Youtube" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomNavigation_Recipes"
+        android:icon="@drawable/ic_recipe"
+        android:title="Recetas" />
+
+    <item
+        android:id="@+id/menuItem_BottomNavigation_BarcodeScanning"
+        android:icon="@drawable/ic_scan_barcode"
+        android:title="Código de Barras" />
+
+    <item
+        android:id=  "@+id/menuItem_BottomNavigation_OurProducts"
+        android:icon="@drawable/ic_shopping_basket_black_24dp"
+        android:title="Nuestros Productos" />
+
+    <item
+        android:id="@+id/bottomNavigation_DailyDessert"
+        android:icon="@drawable/ic_cake"
+        android:title="Postre del Día" />
+
+</menu>

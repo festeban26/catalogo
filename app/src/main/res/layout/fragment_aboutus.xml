@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUsFragment">
+
+    <TextView
+        android:id="@+id/textView_AboutUsFragment_LoadingContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando el contenido..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/progressBar_AboutUsFragment" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_AboutUsFragment"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:progressTint="@color/colorPrimary"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView_aboutUsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

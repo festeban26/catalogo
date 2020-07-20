@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The related products CardView -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/cardViews_verticalMargin"
+    android:layout_marginLeft="@dimen/cardViews_horizontalMargin"
+    android:layout_marginRight="@dimen/cardViews_horizontalMargin"
+    app:cardCornerRadius="@dimen/cardViews_cornerRadius"
+    app:cardElevation="@dimen/cardViews_customElevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_RelatedProductsCardview_TitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:minHeight="@dimen/cardViews_titleBarMinHeight"
+            android:orientation="horizontal"
+            android:padding="@dimen/cardViews_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="@string/relatedProductsCardview_Title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/cardViews_titlesFontSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView__RelatedProductsCardview_TitleBarIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:tint="@color/cardViewTitleBarIconColor"
+                app:srcCompat="@drawable/ic_expand_less_black_24dp" />
+
+        </LinearLayout>
+
+        <!-- Cardview content-->
+        <include layout="@layout/content_relatedproductscardview"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

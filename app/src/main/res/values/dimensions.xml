@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<resources>
+    <!-- Font's dimensions-->
+    <dimen name="fontSize_PageTitles">20sp</dimen>
+    <dimen name="fontSize_ListItemTitles">16sp</dimen>
+    <dimen name="fontSize_ParagraphText">14sp</dimen>
+    <dimen name="fontSize_NutritionFactsText">14sp</dimen>
+    <dimen name="fontSize_NutritionFactsSmallNote">12sp</dimen>
+
+    <!-- Cardview's dimensions-->
+    <dimen name="cardViews_customElevation">4dp</dimen>
+    <dimen name="cardViews_cornerRadius">8dp</dimen>
+    <dimen name="cardViews_titleBarMinHeight">48dp</dimen>
+    <dimen name="cardViews_padding">8dp</dimen>
+    <dimen name="cardViews_horizontalMargin">8dp</dimen>
+    <dimen name="cardViews_verticalMargin">10dp</dimen>
+
+    <dimen name="cardViews_titlesFontSize">16sp</dimen>
+    <dimen name="cardViews_paragraphsFontSize">14sp</dimen>
+
+
+    <dimen name="productInformationCardView_contentMinHeight">330dp</dimen>
+
+    <dimen name="nutritionFacts_marginTopForTitleTop">-8dp</dimen>
+    <dimen name="nutritionFacts_marginTopForLineBelowTitle">-8dp</dimen>
+    <dimen name="nutritionFacts_marginTopForSmallLineBelowContent">-4dp</dimen>
+    <dimen name="nutritionFacts_marginTopForRowBelowSmallHorizontalLine">-3dp</dimen>
+    <dimen name="nutritionFacts_marginTopForLayoutBelowLayout">-10dp</dimen>
+    <dimen name="nutritionFacts_marginTopForLayoutBelowContent">-7dp</dimen>
+    <dimen name="nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">-3dp</dimen>
+    <dimen name="nutritionFacts_marginTopForLayoutBelowBigHorizontalLine">-2dp</dimen>
+    <dimen name="nutritionFacts_marginTopForBigHorizontalLine">-3dp</dimen>
+
+    <dimen name="nutritionFacts_marginTopForContentBelowBigHorizontalLine">-2dp</dimen>
+
+    <dimen name="nutritionFacts_marginTopForContentBelowContent">-2dp</dimen>
+
+    <dimen name="nutritionFacts_marginLeftForValueText">4dp</dimen>
+
+    <dimen name="nutritionFacts_tab">8dp</dimen>
+
+
+
+</resources>

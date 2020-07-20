@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Default Values: SPANISH -->
+
+
+    <!-- GENERAL -->
+    <string name="companyName" translatable="false">Dulac\'s</string>
+    <string name="inprolacSa" translatable="false">INPROLAC S.A.</string>
+    <string name="supportEmail" translatable="false">contacto@inprolac.com.ec</string>
+
+
+    <!-- GENERAL NAVIGATION -->
+    <string name="generalNav_ConfirmExitMessage">¿Deseas salir de la aplicación?</string>
+    <string name="generalNav_Exit">Salir</string>
+    <string name="generalNav_Cancel">Cancelar</string>
+
+
+    <!-- NAVIGATION MENUS-->
+
+    <!-- Navigation Drawer Menu -->
+    <string name="navDrawerMenu_ScanBarcode">Escanear código de barras</string>
+    <string name="navDrawerMenu_Recipes">Recetas</string>
+    <string name="navDrawerMenu_DailyDessert">Postre del día</string>
+    <string name="navDrawerMenu_AboutUs">Quienes Somos</string>
+    <string name="navDrawerMenu_ContactUs">Contáctanos</string>
+    <string name="navDrawerMenu_Facebook" translatable="false">Facebook</string>
+    <string name="navDrawerMenu_Youtube" translatable="false">YouTube</string>
+    <string name="navDrawerMenu_StayInTouchWithUs">Encuéntranos en</string>
+    <string name="navDrawerMenu_OurProducts">Nuestros Productos</string>
+    <!-- Navigation Drawer Description (Accessibility)-->
+    <string name="accessibilityAction_NavDrawerMenu_Close">Cerrar el cajón de navegación</string>
+    <string name="accessibilityAction_NavDrawerMenu_Open">Abrir el cajón de navegación</string>
+    <string name="accessibilityDescription_NavDrawerMenu_Header">Encabezado de navegación</string>
+
+    <!-- Top Navigation Menu -->
+    <string name="bottomNavMenu_Help">Ayuda</string>
+
+    <!-- Bottom Navigation Menu -->
+    <string name="bottomNavMenu_BarcodeScanning">Código de Barras</string>
+
+    <!-- Navigation Action Bar Titles-->
+    <string name="navActionBar_BarcodeScanning">Escaneo de Código de Barras</string>
+    <string name="navActionBar_Recipes">Recetas</string>
+    <string name="navActionBar_DailyDessert">Postre del Día</string>
+    <string name="navActionBar_OurProducts">Nuestros Productos</string>
+    <string name="navActionBar_AboutUs" translatable="false">INPROLAC S.A.</string>
+    <string name="navActionBar_ContactUs">Contacto</string>
+
+
+    <!-- CARDVIEW'S MENUS-->
+
+    <string name="productInformationCardview_Title">Información del Producto</string>
+    <string name="nutritionInformationCardview_Title">Información Nutricional</string>
+    <string name="relatedProductsCardview_Title">Productos Relacionados</string>
+
+    <!-- ProductModel Information CardView -->
+    <string name="productInformationCardview_ProductImageDescription">La imagen del producto</string>
+    <string name="productInformationCardview_ProductTypeTitle">Tipo de Producto</string>
+    <string name="productInformationCardview_ShowRecipes">Ver Recetas</string>
+
+    <!-- Nutrition Information CardView -->
+
+    <!-- Nutrition Label -->
+    <string name="nutritionFactsLabel_Title">Información Nutricional</string>
+    <string name="nutritionFactsLabel_ServingSize">Tamaño de porción:</string>
+    <string name="nutritionFactsLabel_ServingsPerContainer">Porción por envase:</string>
+    <string name="nutritionFactsLabel_AmountPerServing">Cantidad por porción</string>
+    <string name="nutritionFactsLabel_Calories">Energía (calorías):</string>
+    <string name="nutritionFactsLabel_FatCalories">Energía de la grasa (Cal. Grasa):</string>
+    <string name="nutritionFactsLabel_RecommendedDailyIntakeAbbreviation">%VDR</string>
+    <string name="nutritionFactsLabel_TotalFat">Grasa Total</string>
+    <string name="nutritionFactsLabel_SatFat">Grasa Saturada</string>
+    <string name="nutritionFactsLabel_TransFat">Grasas Trans</string>
+    <string name="nutritionFactsLabel_MonounsatutaredFat">Grasas Monoinsaturadas</string>
+    <string name="nutritionFactsLabel_PolyunsatutaredFat">Grasas Poliinsaturadas</string>
+    <string name="nutritionFactsLabel_Cholesterol">Colesterol</string>
+    <string name="nutritionFactsLabel_Sodium">Sodio</string>
+    <string name="nutritionFactsLabel_TotalCarb">Carbohidratos Totales</string>
+    <string name="nutritionFactsLabel_Fibers">Fibra dietética</string>
+    <string name="nutritionFactsLabel_TotalSugars">Azúcares</string>
+    <string name="nutritionFactsLabel_Proteins">Proteínas</string>
+    <string name="nutritionFactsLabel_FootNote">
+        Los porcentajes de los valores diarios recomendados están basados en una dieta de 8380KJ
+        (2000 Cal)</string>
+    <string name="nutritionInformation_Ingredients">Ingredientes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

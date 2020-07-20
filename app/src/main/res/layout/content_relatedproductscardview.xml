@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_RelatedProductsCardview_Content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/cardViews_padding">
+
+    <com.dulacs.festeban26.ExpandableHeightGridView
+        android:id="@+id/grid_view_image_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="8dp" />
+
+</LinearLayout>

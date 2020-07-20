@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- TODO Optimize with list view (less than 80 views)-->
+
+    <!-- Nutritional Facts Title-->
+    <!-- Arimo is another font that can be used -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForTitleTop"
+        android:fontFamily="@font/ramabhadra"
+        android:text="@string/nutritionFactsLabel_Title"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fontSize_PageTitles"
+        android:textStyle="bold" />
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Serving size view -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForRowBelowSmallHorizontalLine">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:text="@string/nutritionFactsLabel_ServingSize"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_ServingSizeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Servings per container view -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:text="@string/nutritionFactsLabel_ServingsPerContainer"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_ServingsPerContainerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+    </LinearLayout>
+
+    <!-- Big horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Amount per serving TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForContentBelowBigHorizontalLine"
+        android:text="@string/nutritionFactsLabel_AmountPerServing"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fontSize_NutritionFactsText"
+        android:textStyle="bold" />
+
+    <!-- Energy (Calories) view -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowContent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:text="@string/nutritionFactsLabel_Calories"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_EnergyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Energy (Calories) from fat view -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:text="@string/nutritionFactsLabel_FatCalories"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_EnergyFromFatValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Medium horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Recommended daily intake TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForContentBelowBigHorizontalLine"
+        android:fontFamily="@font/ramabhadra"
+        android:text="@string/nutritionFactsLabel_RecommendedDailyIntakeAbbreviation"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fontSize_NutritionFactsText"
+        android:textStyle="bold" />
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Total Fat row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_TotalFat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_TotalFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_TotalFatPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Saturated Fat row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_SatFat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_SatFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_SatFatPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Trans Fats row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_TransFat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_TransFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_TransFatPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Monounsaturated Fats row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_MonounsatutaredFat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_MonoUnsaturatedFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Polyunsaturated Fats row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_PolyunsatutaredFat"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_PolyUnsaturatedFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small Horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Cholesterol row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_Cholesterol"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_CholesterolValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_CholesterolPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Sodium row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_Sodium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_SodiumValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_SodiumPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Total Carbohydrate row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_TotalCarb"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_TotalCarbValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_TotalCarbPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Fibers row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_Fibers"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_FibersValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_FibersPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Sugars row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_tab"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_TotalSugars"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_SugarsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_SugarsPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Small horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+    <!-- Protein row-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowSmallHorizontalLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ramabhadra"
+                android:text="@string/nutritionFactsLabel_Proteins"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_NutritionLabel_ProteinValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nutritionFacts_marginLeftForValueText"
+                android:fontFamily="@font/ramabhadra"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontSize_NutritionFactsText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_NutritionLabel_ProteinPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ramabhadra"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontSize_NutritionFactsText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Big horizontal line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+        android:background="@color/colorBlack" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_NutritionLabel_VitaminsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForLayoutBelowBigHorizontalLine"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <GridLayout
+            android:id="@+id/gridLayout_nutritionFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/horizontalLine_nutritionFacts_vitaminsLine"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/nutritionFacts_marginTopForBigHorizontalLine"
+                android:background="@color/colorBlack" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nutritionFacts_marginTopForContentBelowBigHorizontalLine"
+        android:padding="4dp"
+        android:text="@string/nutritionFactsLabel_FootNote"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fontSize_NutritionFactsSmallNote" />
+
+
+</LinearLayout>
